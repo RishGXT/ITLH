@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Input values</title>
+</head>
+<body>
+    
+<h1>Calculator</h1>
+   
+    
+    
+    <pre>
+    
+    Enter first number:
+    <input type="text" id="n1">
+    
+    Enter second number:
+    <input type="text" id="n2">
+    
+    <button onclick="getInputs('+');" ><p id="add1";>+</p></button>
+    
+    <button onclick="getInputs('-');" ><p id="sub1";>-</p></button>
+    
+    <button onclick="getInputs('*');" ><p id="mul1";>*</p></button>
+    
+    <button onclick="getInputs('/');" ><p id="div1";>/</p></button>
+    
+       </pre>
+    
+   
+
+<script type="text/javascript">
+
+        
+function getInputs(sign)    
+{        
+var a=document.getElementById("n1").value;
+    console.log(a);
+var b=document.getElementById("n2").value;
+    console.log(b);
+var sign;
+    switch(sign)
+        {
+                case'+':
+                add(a,b);
+                break;
+                
+                case'-':
+                sub(a,b);
+                break; 
+            
+                case'*':
+                mul(a,b);
+                break;
+                
+                case'/':
+                div(a,b);
+                break;
+        }
+    
+};
+
+function add(x,y)
+{
+
+ var q=Number(x)+Number(y);
+    document.getElementById("add1").innerHTML=q;
+    console.log(q)
+}
+    
+    function sub(x,y)
+{
+
+ var w=Number(x)-Number(y);
+    document.getElementById("sub1").innerHTML=w;
+    console.log(w)
+}
+    
+    function mul(x,y)
+{
+
+ var e=Number(x)*Number(y);
+    document.getElementById("mul1").innerHTML=e;
+    console.log(e)
+}
+    
+    function div(x,y)
+{
+
+ var r=Number(x)/Number(y);
+    document.getElementById("div1").innerHTML=r;
+    console.log(r)
+}
+    
+        
+</script>
+    
+    
+</body>
+</html>
+

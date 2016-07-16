@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+<title>Registration Form</title>
+
+</head>
+
+<body>
+
+<h1>REGISTRATION FORM</h1>
+
+<form method="post" action="">
+<input type="hidden" name="ipaddress" value="192.168.0.11"/>
+
+<table>
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="fullname" placeholder="Fullname"/></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" name="pass"/></td>
+</tr>
+
+<tr>
+<td>Age:</td>
+<td><input type="text" name="age" placeholder="Age"/></td>
+</tr>
+
+<tr>
+<td>Mobile:</td>
+<td><input type="text" name="mobile" maxlength="10"/></td>
+</tr>
+
+<tr>
+<td>City:</td>
+<td>
+<Select name="city">
+<option value="">--Select--</option>
+<option value="mumbai">Mumbai</option>
+<option value="delhi">Delhi</option>
+<option value="kolkata">Kolkata</option>
+</td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td><input type="radio" name="gender" value="male"/>Male</td>
+<td><input type="radio" name="gender" value="female"/>Female</td>
+</tr>
+
+<tr>
+<td>Interests:</td>
+<td><input type="checkbox" name="interests" value="sports"/>Sports</td>
+<td><input type="checkbox" name="interests" value="movies"/>Movies</td>
+<td><input type="checkbox" name="interests" value="books"/>Books</td>
+</tr>
+
+<tr>
+<td>Feedback:</td>
+<td><textarea rows="4" cols="30" name="feedback"></textarea></td>
+</tr>
+
+<tr>
+<td><input type="submit" name="submit" value="Submit the form"/></td>
+</tr>
+
+<tr>
+<td><input type="reset" name="reset" value="Reset the form"/></td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
+
+

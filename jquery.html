@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    
+    <title>
+        
+        </title>
+    
+        <script src ="jquery-3.0.0.js"></script>
+        
+    </head>
+
+    <body >
+    
+        
+        
+        <img src="pic_bulboff.gif" id="bulb">
+        
+        <button id="btn_bulb">ON</button>
+    
+        <button id="off">OFF</button>
+        
+        <script type="text/javascript">
+    
+            $('#btn_bulb').on("click",function()
+                              
+            {
+                console.log('hey event fired!');
+                $('#bulb').attr('src',"pic_bulbon.gif" );
+            }
+    );
+            $('#off').on("click",function()
+                         {
+                
+                $('#bulb').attr('src',"pic_bulboff.gif");
+            });
+            
+            
+           
+        </script>
+    
+    </body>
+
+</html>

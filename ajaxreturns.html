@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo"><h2>AJAX Magic!!</h2></div>
+
+$.ajax({
+url:"test.html",
+    data:{'q':'hello},
+    
+}).done(function(response) {
+    console.log(response);
+    $('div#ajax').html(response;)
+    });
+    
